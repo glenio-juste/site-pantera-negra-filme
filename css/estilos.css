@@ -1,0 +1,214 @@
+/*Reset*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.titulo {
+    background-color: #2e2e2e;
+    padding: 30px 15px;
+    margin: 10px;
+}
+
+.titulo h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4d4d4d;
+    margin: 10px;
+    opacity: 0.7;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: Pacifico, serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.parte-de-cima img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.principal {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.sinopse h2 {
+    text-align: center;
+}
+
+.sinopse {
+    text-align: justify;
+    max-width: 100%;
+}
+
+.creditos {
+    max-width: 100%;
+    float: left;
+    text-align: left;
+}
+
+.critica img {
+    width: 100%;
+}
+
+.critica p {
+    text-align: justify;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video iframe,
+.video object,
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mapa {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 0;
+}
+
+.mapa iframe {
+    left: 0;
+    top: 50px;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+}
+
+.mapa h2 {
+    font-size: 20px;
+    margin-top: 20px;
+   
+}
+
+.rodape {
+    padding: 10px;
+    background-color: #2e2e2e;
+    color: aliceblue;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+@media (min-width: 480px) {
+    body {
+        background: url(../img/fundo.jpg) no-repeat;
+        background-attachment: fixed;
+        color: white;
+    }
+
+    .titulo {
+        margin: 10px;
+        padding: 20px 15px;
+        background-color: white;
+        opacity: 0.5;
+    }
+
+    .titulo h1 {
+        font-size: 30px;
+        color: black;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    .parte-de-cima img {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .sinopse h2 {
+        text-align: center;
+    }
+
+    .sinopse {
+        display: inline;
+        max-width: 50%;
+        float: left;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .creditos {
+        display: inline;
+        max-width: 35%;
+        float: right;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .mapa iframe {
+        left: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        max-width: 100%;
+        position: absolute;
+    }
+
+    .rodape {
+        background-color: #2e2e2e;
+        color: aliceblue;
+        text-align: center;
+    }
+
+}
